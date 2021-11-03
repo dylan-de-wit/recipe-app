@@ -1,14 +1,8 @@
 package recipe.app.plugins
 
 import io.ktor.application.*
-import io.ktor.response.*
-import io.ktor.routing.*
+import recipe.app.routes.registerHelloWorldRoutes
 
 fun Application.configureRouting() {
-
-    routing {
-        get("/") {
-            call.respondText("Hello World!")
-        }
-    }
+    registerHelloWorldRoutes()
 }
