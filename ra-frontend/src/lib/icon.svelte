@@ -8,6 +8,6 @@
   }
 
   img {
-    max-width: 32px;
+    max-width: 4rem;
   }
 </style>

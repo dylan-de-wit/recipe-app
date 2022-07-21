@@ -29,12 +29,12 @@
     import SubHeader from '../lib/sub-header.svelte'
 </script>
 
-<section class="library">
+<section class="container page library">
     <h1>Welcome to the library</h1>
     <p>This is a complete guide on all components</p>
     <InputField></InputField>
     <CheckBox></CheckBox>
-    <Button></Button>
+    <Button text="Hoi, ik ben een knop"></Button>
     <Divider></Divider>
     <Icon></Icon>
     <Search></Search>
@@ -63,7 +63,7 @@
 </section>
 
 <style lang="scss">
-  @import "./src/styles/variables.scss";
+  @import "../styles/theme";
 
   .library {
     display: flex;

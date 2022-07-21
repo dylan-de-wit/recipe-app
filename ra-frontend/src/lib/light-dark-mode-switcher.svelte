@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Button from './button.svelte'
 
     // todo: implement nicely
     function switchMode(): void {
@@ -8,6 +9,4 @@
     }
 </script>
 
-<button type="button" on:click={switchMode}>
-    Switch mode
-</button>
+<Button text="Dark mode" on:click={switchMode} />

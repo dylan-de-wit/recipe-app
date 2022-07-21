@@ -1,3 +1,13 @@
+@import "breakpoints";
+
+// Breakpoints
+$breakpoint-phone: 480px !default;
+$breakpoint-tablet: 768px !default;
+$breakpoint-medium-desktop: 1024px !default;
+$breakpoint-medium-large-desktop: 1200px !default;
+$breakpoint-large-desktop: 1470px !default;
+$breakpoint-extra-large-desktop: 2000px !default;
+
 :global {
   :root {
     --primary-color: #302AE6;
@@ -15,6 +25,13 @@
     --heading-color: #818cab;
   }
 
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   body {
     background-color: var(--bg-color);
     color: var(--font-color);
@@ -27,8 +44,27 @@
   a {
     color: var(--primary-color);
   }
+
+  .page {
+    margin: 6rem auto 1rem;
+    height: 100%;
+  }
+
+  .container {
+    max-width: 80vw;
+
+    @include breakpoint-up-to($breakpoint-tablet) {
+      max-width: 90vw;
+    }
+
+    @include breakpoint-from($breakpoint-extra-large-desktop) {
+      max-width: 50vw;
+    }
+  }
 }
 
+
+// Colors
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
 $font-color: var(--font-color);
