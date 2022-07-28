@@ -1,5 +1,5 @@
 <script>
-    import InputField from './form/input-field.svelte'
+    import InputField from './form/InputField.svelte'
 </script>
 
 <span>search:</span>

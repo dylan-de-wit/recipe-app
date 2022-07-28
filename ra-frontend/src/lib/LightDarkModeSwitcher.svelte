@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Button from './button.svelte'
+    import Button from './Button.svelte'
 
     // todo: implement nicely
     function switchMode(): void {

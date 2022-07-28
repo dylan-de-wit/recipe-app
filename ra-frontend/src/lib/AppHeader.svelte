@@ -1,10 +1,10 @@
 <script>
-    import Icon from '../lib/icon.svelte'
-    import LightDarkModeSwitcher from '../lib/light-dark-mode-switcher.svelte'
+    import Icon from './Icon.svelte'
+    import LightDarkModeSwitcher from './LightDarkModeSwitcher.svelte'
 </script>
 
 <header>
-    <section class="container header-content">
+    <section class="{$$props.class} header-content">
         <div class="logo">
             <Icon/>
         </div>

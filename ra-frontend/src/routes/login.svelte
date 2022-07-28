@@ -1,11 +1,11 @@
 <script>
-    import AppHeader from '../lib/app-header.svelte'
-    import InputField from '../lib/form/input-field.svelte'
-    import Button from '../lib/button.svelte'
+    import AppHeader from '../lib/AppHeader.svelte'
+    import InputField from '../lib/form/InputField.svelte'
+    import Button from '../lib/Button.svelte'
 </script>
 
 <AppHeader/>
-<section class="page container login">
+<section class="page login">
     <InputField/>
     <InputField/>
     <Button class="login__button" text="Login"/>

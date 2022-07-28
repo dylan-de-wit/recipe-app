@@ -10,7 +10,7 @@ $breakpoint-extra-large-desktop: 2000px !default;
 
 :global {
   :root {
-    --primary-color: #302AE6;
+    --primary-color: #1ECD97;
     --secondary-color: #536390;
     --font-color: #424242;
     --bg-color: #fff;
@@ -18,7 +18,7 @@ $breakpoint-extra-large-desktop: 2000px !default;
   }
 
   [data-theme="dark"] {
-    --primary-color: #9A97F3;
+    --primary-color: #1ECD97;
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
     --bg-color: #161625;
@@ -27,8 +27,9 @@ $breakpoint-extra-large-desktop: 2000px !default;
 
   html,
   body {
-    height: 100%;
     width: 100%;
+    height: 100%;
+    margin: 0;
     overflow-x: hidden;
   }
 
@@ -46,12 +47,13 @@ $breakpoint-extra-large-desktop: 2000px !default;
   }
 
   .page {
-    margin: 6rem auto 1rem;
     height: 100%;
+    margin: 6rem auto 1rem;
   }
 
-  .container {
+  .app {
     max-width: 80vw;
+    margin: 0 auto;
 
     @include breakpoint-up-to($breakpoint-tablet) {
       max-width: 90vw;
@@ -60,6 +62,10 @@ $breakpoint-extra-large-desktop: 2000px !default;
     @include breakpoint-from($breakpoint-extra-large-desktop) {
       max-width: 50vw;
     }
+  }
+
+  .content {
+    margin-top: calc(5rem + 1rem);
   }
 }
 
