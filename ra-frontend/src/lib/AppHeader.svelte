@@ -6,7 +6,7 @@
 <header>
     <section class="{$$props.class} header-content">
         <div class="logo">
-            <Icon/>
+            <Icon size="l"/>
         </div>
 
         <div class="navigation">

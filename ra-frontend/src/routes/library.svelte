@@ -25,41 +25,47 @@
     import Spinner from '../lib/Spinner.svelte'
     import LanguageSelector from '../lib/LanguageSelector.svelte'
     import LightDarkModeSwitcher from '../lib/LightDarkModeSwitcher.svelte'
-    import Header from '../lib/Header.svelte'
-    import SubHeader from '../lib/SubHeader.svelte'
+    import Heading from '../lib/heading/Heading.svelte'
+    import SubHeading from '../lib/heading/SubHeading.svelte'
 </script>
 
+<Heading text="Welcome to the library!"></Heading>
+<SubHeading text=""></SubHeading>
+<p>This is a library of all component options</p>
+
 <section class="page library">
-    <h1>Welcome to the library</h1>
-    <p>This is a complete guide on all components</p>
-    <InputField></InputField>
-    <CheckBox></CheckBox>
-    <Button text="Dit is een knop"></Button>
+    <Banner></Banner>
+    <Heading text="This is a Heading"></Heading>
+    <SubHeading text="This is a SubHeading"></SubHeading>
     <Divider></Divider>
-    <Icon></Icon>
-    <Search></Search>
-    <Tabs></Tabs>
-    <Tab></Tab>
+    <Button>Button</Button>
+    <Icon size="l"></Icon>
+
     <Card></Card>
     <CardHeader></CardHeader>
     <CardContent></CardContent>
     <CardActions></CardActions>
-<!--    <AppHeader></AppHeader>-->
-    <AppFooter></AppFooter>
-    <Banner></Banner>
+
+    <Tabs></Tabs>
+    <Tab></Tab>
+
+    <Search></Search>
+    <Paginator></Paginator>
+
+    <InputField></InputField>
     <Select></Select>
+    <CheckBox></CheckBox>
     <Radio></Radio>
     <Menu></Menu>
     <Chips></Chips>
     <DatePicker></DatePicker>
+
     <Dialog></Dialog>
     <Snackbar></Snackbar>
-    <Paginator></Paginator>
     <Spinner></Spinner>
+
     <LanguageSelector></LanguageSelector>
     <LightDarkModeSwitcher></LightDarkModeSwitcher>
-    <Header></Header>
-    <SubHeader></SubHeader>
 </section>
 
 <style lang="scss">
@@ -68,7 +74,8 @@
   .library {
     display: flex;
     flex-direction: column;
-    gap: .25rem;
+    gap: 1rem;
+    margin-top: 2rem;
   }
 
 </style>

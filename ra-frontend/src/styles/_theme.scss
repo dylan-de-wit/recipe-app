@@ -11,16 +11,20 @@ $breakpoint-extra-large-desktop: 2000px !default;
 :global {
   :root {
     --primary-color: #1ECD97;
-    --secondary-color: #536390;
+    --secondary-color: #cc3366;
     --font-color: #424242;
+    --font-color-light: #757575;
+    --font-color-lighter: #a8a8a8;
     --bg-color: #fff;
     --heading-color: #292922;
   }
 
   [data-theme="dark"] {
     --primary-color: #1ECD97;
-    --secondary-color: #818cab;
+    --secondary-color: #cc3366;
     --font-color: #e1e1ff;
+    --font-color-light: #757575;
+    --font-color-lighter: #a8a8a8;
     --bg-color: #161625;
     --heading-color: #818cab;
   }
@@ -38,17 +42,12 @@ $breakpoint-extra-large-desktop: 2000px !default;
     color: var(--font-color);
   }
 
-  h1 {
-    color: var(--secondary-color);
-  }
-
   a {
     color: var(--primary-color);
   }
 
   .page {
     height: 100%;
-    margin: 6rem auto 1rem;
   }
 
   .app {
@@ -66,6 +65,7 @@ $breakpoint-extra-large-desktop: 2000px !default;
 
   .content {
     margin-top: calc(5rem + 1rem);
+    margin-bottom: 1rem;
   }
 }
 
@@ -74,5 +74,7 @@ $breakpoint-extra-large-desktop: 2000px !default;
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
 $font-color: var(--font-color);
+$font-color-light: var(--font-color-light);
+$font-color-lighter: var(--font-color-lighter);
 $bg-color: var(--bg-color);
 $heading-color: var(--heading-color);

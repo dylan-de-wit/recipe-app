@@ -8,7 +8,9 @@
 <section class="page login">
     <InputField/>
     <InputField/>
-    <Button class="login__button" text="Login"/>
+    <Button class="login__button">
+        Login
+    </Button>
 </section>
 
 <style lang="scss">

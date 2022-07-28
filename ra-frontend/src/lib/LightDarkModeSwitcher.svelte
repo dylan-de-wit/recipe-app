@@ -1,12 +1,28 @@
 <script lang="ts">
-    import Button from './Button.svelte'
+    import Icon from './Icon.svelte';
+    import sun from '$lib/assets/sun.png';
+    import moon from '$lib/assets/moon.png';
+    import { onMount } from 'svelte';
 
-    // todo: implement nicely
+    let selectedTheme;
+    onMount(() => {
+        const currentTheme = document.body.getAttribute('data-theme');
+        selectedTheme = currentTheme === 'dark' ? 'dark' : 'light';
+    });
+
     function switchMode(): void {
         const currentTheme = document.body.getAttribute('data-theme');
-        const selectedTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        selectedTheme = currentTheme === 'dark' ? 'light' : 'dark';
         document.body.setAttribute('data-theme', selectedTheme);
     }
 </script>
 
-<Button text="Dark mode" on:click={switchMode} />
+<div class="light-dark-icon">
+    <Icon icon="{selectedTheme === 'dark' ? sun : moon}" size="s" on:click={switchMode}></Icon>
+</div>
+
+<style lang="scss">
+  .light-dark-icon {
+    cursor: pointer;
+  }
+</style>

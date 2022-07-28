@@ -1,9 +1,7 @@
-<script>
-    export let text;
-</script>
-
 <div class="{$$props.class}  button">
-    <button on:click>{text}</button>
+    <button on:click>
+        <slot>Button</slot>
+    </button>
 </div>
 
 <style lang="scss">
