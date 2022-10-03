@@ -67,6 +67,23 @@ $breakpoint-extra-large-desktop: 2000px !default;
     margin-top: calc(5rem + 1rem);
     margin-bottom: 1rem;
   }
+
+  .bleed {
+    width: 100vw;
+    margin-left: -10vw;
+
+    @include breakpoint-up-to($breakpoint-tablet) {
+      margin-left: -5vw;
+    }
+
+    @include breakpoint-from($breakpoint-extra-large-desktop) {
+      margin-left: -25vw;
+    }
+  }
+
+  .fit-to-app-header {
+    margin-top: -2rem;
+  }
 }
 
 

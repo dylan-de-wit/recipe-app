@@ -29,12 +29,10 @@
     import SubHeading from '../lib/heading/SubHeading.svelte'
 </script>
 
-<Heading text="Welcome to the library!"></Heading>
-<SubHeading text=""></SubHeading>
-<p>This is a library of all component options</p>
+
 
 <section class="page library">
-    <Banner></Banner>
+    <Banner class="fit-to-app-header"></Banner>
     <Heading text="This is a Heading"></Heading>
     <SubHeading text="This is a SubHeading"></SubHeading>
     <Divider></Divider>
